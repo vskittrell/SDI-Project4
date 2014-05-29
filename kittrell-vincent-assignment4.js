@@ -50,3 +50,29 @@ var myReturnVal = emailChck(usrInput);
 
 console.log(myReturnVal);
 
+//String Problem 3: Website URL
+
+//Global variable
+var usrInput = prompt("Enter a URL in the format http:// or https:// ");
+
+//URL protocol verifier function
+var urlChck = function(usrInput){
+
+  var urlProtocol = usrInput.substr(0,7);
+  var urlSecProtocol = usrInput.substr(0,8);
+
+  if(urlProtocol ==="http://" || urlSecProtocol === "https://"){
+alert ("Surfs up,baby!");
+    return true;
+  }
+  else{
+alert ("Whoah! Wipe out, bro.");
+    return false;
+  }
+
+};
+
+var myReturnVal = urlChck(usrInput);
+
+console.log(myReturnVal);
+
