@@ -26,3 +26,27 @@ var chck = function(usrInput)
 var chcking = chck (usrInput);
 
 console.log(chcking);
+
+
+//String Problem 2: Email Address
+
+//Global variables
+var usrInput = prompt("Enter an email address in the aaa@bbb.ccc format");
+
+//String
+var emailChck = function(usrInput){
+
+		if(usrInput.search("@") === -1 || usrInput.charAt(usrInput.length-4) !== "."){
+alert ("You've got mail!");
+			return false;
+		}
+		else{
+alert ("No fan mail for you. :(");
+			return true;
+		}
+
+};
+var myReturnVal = emailChck(usrInput);
+
+console.log(myReturnVal);
+
