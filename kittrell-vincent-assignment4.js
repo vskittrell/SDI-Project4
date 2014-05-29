@@ -38,20 +38,16 @@ var usrInput = prompt("Enter an email address in the aaa@bbb.ccc format");
 //String
 
 var myemail = function(userInput){
-
-		if(userInput.search("@") === -1 || usrInput.charAt(usrInput.length-4) !== "."){
-alert ("No fan mail for you. :(");
-			return false;
-		}
-		else{
-alert ("You've got mail!");
-			return true;
-		}
+    if(userInput.search("@") === -1 || usrInput.charAt(usrInput.length-4) !== "."){
+        alert ("No fan mail for you. :(");
+        return false;
+    }else{
+        alert ("You've got mail!");
+        return true;
+		};
 
 };
-var myReturnVal = myemail(userInput);
-
-console.log(myReturnVal);
+var myreturn = myemail(userInput);
 
 //String Problem 3: Website URL
 
@@ -81,6 +77,41 @@ var myReturn = wscheck(userInput);
 console.log(myReturn);
 
 //String Problem 4: Upper Case the title
+//Local variables
+var myTitle = "";
+var newTitle = "";
+
+//Function
+var titleWar = function(strTitle) {
+    strTitle = prompt("So what is your title?");
+    return strTitle;
+};
+
+var titleWon = function(strTitle) {
+    var theOld = strTitle;
+    var theNew = "";
+    var strCakeWalk = "Cake Walk";
+    var currentIndex = 0;
+    var newIndex = 0;
+        
+while (theOld.length !=0) {
+    if(theOld.indexOf(" ",currentIndex) !=-1) {
+        newIndex = theOld.indexOf(" ",currentIndex)
+}else{
+    newIndex = theOld.length
+};
+    strCakeWalk = theOld.substring(currentIndex,newIndex);
+    theOld = theOld.substring(newIndex+1,theOld.length);
+    strCakeWalk = strCakeWalk.toLowerCase();
+    strCakeWalk = strCakeWalk.charAt(0).toUpperCase()+strCakeWalk.substring(1);
+    theNew = theNew + strCakeWalk + " ";
+};
+    alert("Old Title: " + strTitle + "\n\nNew Title: " + theNew + "\n ");
+    return theNew;
+};
+
+myTitle = titleWar(myTitle);
+newTitle = titleWon(myTitle);
 
 //Global Variables
 
