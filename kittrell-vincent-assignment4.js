@@ -12,7 +12,7 @@ var userInput = prompt("Please enter a number in the xxx-xxx-xxxx format below: 
 
 //Phone number verifier
 
-var ver = function (userInput) {
+var veri = function (userInput) {
 
     if (userInput.charAt(3) !== "-" || userInput.charAt(7) !== "-") {
         alert("Yuck! Can't call you!");
@@ -33,21 +33,31 @@ console.log(verify);
 
 //Global variables
 
-var usrInput = prompt("Enter an email address in the aaa@bbb.ccc format");
+var userInput = prompt("You have an email?");
 
 //String
 
 var myemail = function(userInput){
-    if(userInput.search("@") === -1 || usrInput.charAt(usrInput.length-4) !== "."){
+    
+    if(userInput.search("@") === -1 || userInput.charAt(userInput.length-4) !== ".") {
+        
         alert ("No fan mail for you. :(");
+        console.log("I'm so lonely.");
         return false;
+        
     }else{
+        
         alert ("You've got mail!");
+        console.log("Here is your email address, " + userInput + ".");
         return true;
-		};
+        
+		}
 
 };
 var myreturn = myemail(userInput);
+console.log("Here is your email address, " + userInput + ".");
+
+            
 
 //String Problem 3: Website URL
 
@@ -117,21 +127,24 @@ newTitle = titleWon(myTitle);
 
 //String Problem 5:
 
-alert("01010110101010101011010101010101010101........Mathman!");
+alert("01010110101010101011010101010101010101........\nMathman!");
 
 //Number Problem 1:
 
+
 //Number Problem 2:
+
+
 
 //Number Problem 3: Two dates
 
 //Variables
-var dateDif = 0
+var date = 0
 
 var theDate = function(date) {
     var date1 = prompt("What is your birthday?\n ");
     var date2 = prompt("Enter somebody else's birthday.\n ");
-    var date3 = new Date();
+    var date3 = Date();
     var responseType = "Hour";
         
     responseType = prompt("Do you want know how much older or younger you are? You only get to know in days or hours. Mwhahahaha!","days or hours");
@@ -153,7 +166,26 @@ var theDate = function(date) {
 };
 
 dateDiff = theDate();
-alert("Look at that difference!");
+
+alert ("Some Dragons shoot their breath in arrays!");
+
+//Array Problem 1:
+
+
+Array.prototype.minGreaterThan = function(a) {
+    var t=this,r=Number.POSITIVE_INFINITY,i;
+	for (i=0;i<t.length;i++) 
+    if (a<t[i] && t[i]<r) r=t[i];
+	return r;
+}
+
+var arr=[1,6,12,14],n=5;
+alert(arr.minGreaterThan(n));  
+
+
+
+
+
 
 //Number Problem 4:
 
