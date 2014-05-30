@@ -28,7 +28,6 @@ var verify = ver(userInput);
 
 console.log(verify);
 
-
 //String Problem 2: Email Address
 
 //Global variables
@@ -56,8 +55,6 @@ var myemail = function(userInput){
 };
 var myreturn = myemail(userInput);
 console.log("Here is your email address, " + userInput + ".");
-
-            
 
 //String Problem 3: Website URL
 
@@ -123,9 +120,6 @@ while (theOld.length !=0) {
 myTitle = titleWar(myTitle);
 newTitle = titleWon(myTitle);
 
-//Global Variables
-
-//String Problem 5:
 
 alert("01010110101010101011010101010101010101........\nMathman!");
 
@@ -174,14 +168,3 @@ Array.prototype.minGreaterThan = function(a) {
 
 var arr=[1,6,12,14],n=5;
 alert(arr.minGreaterThan(n));  
-
-
-
-
-
-
-//Number Problem 4:
-
-
-
-
