@@ -129,13 +129,6 @@ newTitle = titleWon(myTitle);
 
 alert("01010110101010101011010101010101010101........\nMathman!");
 
-//Number Problem 1:
-
-
-//Number Problem 2:
-
-
-
 //Number Problem 3: Two dates
 
 //Variables
